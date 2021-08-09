@@ -73,7 +73,7 @@ export default function Counter() {
     fontSize: '1.5em',
     marginBottom: '0.3em',
     /* STEP 2  If count is even, then "royalblue", else "crimson".*/
-    color: count === isEven ? 'royalblue' : 'crimson'
+    color: isEven(count) ? 'royalblue' : 'crimson'
   };
 
   return (
