@@ -67,8 +67,9 @@ export default function Programmers() {
           // Ternaries are fantastic to render "one thing or the other" depending on the "truthiness" of something.
           // Pseudo-code: if the currently featured id is truthy render text 1, otherwise render text 2.
           // Replace the hard-coded false with the correct variable.
-          false
-          ? `🎉 Let's celebrate ${getNameOfFeatured()}! 🥳`: 'Pick an awesome programmer',
+          activeProgrammer
+          ? `🎉 Let's celebrate ${getNameOfFeatured()}! 🥳`
+          : 'Pick an awesome programmer'
         }
       </div>
     </div>
